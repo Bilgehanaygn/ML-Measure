@@ -1,10 +1,11 @@
-import Head from "next/head";
 import styles from "./MainPage.module.css";
 import Image from "next/image";
 import configImage from "../assets/config.PNG";
 import inviteImage from "../assets/inviteImage.PNG";
 import sampleFormImage from "../assets/sampleFormImage.PNG";
 import formSubmitGif from "../assets/formSubmitGif.gif";
+import authBlockImage from "../assets/authBlockImage.PNG";
+import databaseImage from "../assets/databaseImage.PNG";
 
 export const MainPage = () => {
   return (
@@ -27,12 +28,13 @@ export const MainPage = () => {
         learning models. The process begins with sending an invitation mail
         using an get request from the admin panel to an expert as can be seen
         below.
+        <Image
+          src={inviteImage}
+          alt="inviteImage.png"
+          className={styles.imageStyles}
+        />
       </div>
-      <Image
-        src={inviteImage}
-        alt="inviteImage.png"
-        className={styles.imageStyles}
-      />
+
       <div className={styles.content}>
         We are generating an authentication token on the server and passing this
         by URL. Thus all the login-register processes are avoided, in order to
@@ -84,9 +86,26 @@ export const MainPage = () => {
           loading="lazy"
         />
         The authentication tokens ensures the collected datas security. The
-        predictions experts make are saved into the mongoDB along with their
+        access is blocked in both client and server sides if no authentication
+        token is presented.
+        <Image
+          src={authBlockImage}
+          alt="authBlockImage.PNG"
+          className={styles.imageStyles}
+        />
+        The predictions experts make are saved into the mongoDB along with their
         proficiency information and will be used in analyzes in ML-Contribute
         project.
+        <Image
+          src={databaseImage}
+          alt="databaseImage.png"
+          className={styles.imageStyles}
+        />
+      </div>
+      <div className={styles.content}>
+        That's all :). Thank you for reading, if you wanna see more on this
+        project, don't forget to read ML-Contribute which is the last part of
+        this project.
       </div>
 
       <div className={styles.smallerHeader}>
