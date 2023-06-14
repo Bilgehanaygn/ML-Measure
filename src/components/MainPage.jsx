@@ -6,6 +6,7 @@ import sampleFormImage from "../assets/sampleFormImage.PNG";
 import formSubmitGif from "../assets/formSubmitGif.gif";
 import authBlockImage from "../assets/authBlockImage.PNG";
 import databaseImage from "../assets/databaseImage.PNG";
+import userInfoImage from "../assets/userInfoImage.PNG";
 
 export const MainPage = () => {
   return (
@@ -25,9 +26,9 @@ export const MainPage = () => {
         prediction to the classification problem. We are performing analyzes on
         the collected data by using the experience and proficiency of the
         experts and comparing their answers to the predictions of the machine
-        learning models. The process begins with sending an invitation mail
-        using an get request from the admin panel to an expert as can be seen
-        below.
+        learning models. The process begins with sending an invitation mail to
+        an expert using a get request from the admin panel to the server as can
+        be seen below.
         <Image
           src={inviteImage}
           alt="inviteImage.png"
@@ -38,15 +39,17 @@ export const MainPage = () => {
       <div className={styles.content}>
         We are generating an authentication token on the server and passing this
         by URL. Thus all the login-register processes are avoided, in order to
-        keep the experts motivated to fill the form :).
+        prevent bothering the users by these formal processes.
       </div>
       <div className={styles.content}>
         If this is the very first time the expert is clicking on the link we are
-        asking two simple questions which will be used when analyzing the
-        answers. These questions can be seen below.
-        <br />
-        ---User Info Form Image---
-        <br />
+        asking two simple questions which will be used when analyzing the data.
+        These questions can be seen below.
+        <Image
+          src={userInfoImage}
+          alt="userInfoImage.PNG"
+          className={styles.imageStyles}
+        />
         Right after the expert submits the form, user is navigated to the
         prediction page. Here we are fetching a config file which is used when
         generating the dynamic form. Thus our application becomes available for
@@ -101,8 +104,8 @@ export const MainPage = () => {
           alt="databaseImage.png"
           className={styles.imageStyles}
         />
-        The 1 in the userInfo field is indicates that the year of expertise of
-        the user is only 1 year and u indicates the expert is working at a
+        The "1" in the userInfo field indicates that the year of expertise of
+        the user is only 1 year and "u" indicates the expert is working at a
         University Hospital.
         <br />
         The prediction indicates the prediction of the user and the status
