@@ -101,6 +101,12 @@ export const MainPage = () => {
           alt="databaseImage.png"
           className={styles.imageStyles}
         />
+        The 1 in the userInfo field is indicates that the year of expertise of
+        the user is only 1 year and u indicates the expert is working at a
+        University Hospital.
+        <br />
+        The prediction indicates the prediction of the user and the status
+        indicates whether this observation have benn fetched or not.
       </div>
       <div className={styles.content}>
         That's all :). Thank you for reading, if you wanna see more on this
