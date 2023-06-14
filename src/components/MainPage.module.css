@@ -1,0 +1,33 @@
+.middleMain {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  font-size: 25px;
+  text-indent: 1em;
+  background-color: #303030;
+  padding: 1em 0em;
+  box-shadow: -5px 5px 10px 5px #888888;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.content {
+  font-size: 0.8em;
+  margin: 1em;
+}
+
+.smallerHeader {
+  font-size: 1.1em;
+  margin: 1em;
+}
+
+.imageStyles {
+  width: 100%;
+  height: auto;
+  margin: 1em 0em;
+}
